@@ -19,4 +19,4 @@ argon2-rs salt [OPTIONS]
 | -l     | u_int_32   | Sets hash output length to N bytes (default = 32)                  |
 | -e     |            | Output only encoded hash                                           |
 | -r     |            | Output only the raw bytes of the hash                              |
-| -v     | (10|13)    | Argon2 version (defaults to the most recent version, currently 13) |
+| -v     | 10 or 13   | Argon2 version (defaults to the most recent version, currently 13) |

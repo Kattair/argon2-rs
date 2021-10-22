@@ -1,4 +1,4 @@
-# argon2_rs
+# argon2-rs
 Simple argon2 hashing program using crate rust-argon2.
 
 ## Links

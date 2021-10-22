@@ -1,9 +1,11 @@
 # argon2_rs
 Simple argon2 hashing program using crate rust-argon2.
-Usability mimicks usability of argon2 utility on Debian: https://manpages.debian.org/buster/argon2/argon2.1.en.html
+
+## Links
+Usability mimicks usability of argon2 utility on Debian: https://manpages.debian.org/buster/argon2/argon2.1.en.html \
 Default values are defined by the rust-argon2 crate here: https://docs.sru-systems.com/rust-argon2/0.8.0/argon2/struct.Config.html
 
-# Usage
+## Usage
 argon2-rs salt [OPTIONS]
 
 | Option | Parameters | Description                                                        |

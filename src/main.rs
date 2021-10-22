@@ -12,6 +12,7 @@ fn main() {
     let args = &args[1..];
 
     let config = LocalConfig::from_args(args);
+    // print!("{:#?}", config);
     let hasher = Hasher::new(&config);
 
     match hasher.hash() {

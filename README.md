@@ -6,6 +6,11 @@ Usability mimicks usability of argon2 utility on Debian: https://manpages.debian
 Default values are defined by the rust-argon2 crate here: https://docs.sru-systems.com/rust-argon2/0.8.0/argon2/struct.Config.html
 
 ## Usage
+The program reads its input from standard input.
+
+Example: echo "my input" -n | argon2-rs "randomsalt"
+
+## Synopsis
 argon2-rs salt [OPTIONS]
 
 | Option | Parameters | Description                                                        |

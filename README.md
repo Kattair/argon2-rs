@@ -9,6 +9,7 @@ Default values are defined by the rust-argon2 crate here: https://docs.sru-syste
 The program reads its input from standard input.
 
 Example: echo "my input" -n | argon2-rs "randomsalt"
+**! Windows adds CR LF to the end of the echoed string !***
 
 ## Synopsis
 argon2-rs salt [OPTIONS]

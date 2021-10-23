@@ -1,5 +1,4 @@
 use super::{
-    arg_checkers::{check_help, check_mandatory_args},
     parser::parse_args,
     LocalConfig, OutputMode,
 };
@@ -20,9 +19,6 @@ impl<'a> LocalConfig<'a> {
     }
 
     pub fn from_args(args: &'a [String]) -> LocalConfig<'a> {
-        check_mandatory_args(&args);
-        check_help(&args[0]);
-
         let salt = &args[0];
 
         let (argon_config, output_mode) = parse_args(&args[1..]);

@@ -1,4 +1,5 @@
 use std::process;
+use std::io::{self, Write};
 
 pub fn check_mandatory_args(args: &[String]) {
     if args.is_empty() {
@@ -14,4 +15,8 @@ pub fn check_help(arg: &str) {
     }
 }
 
-fn print_help() {}
+pub fn print_help() {
+    io::stdout()
+        .write_all(include_bytes!("../README.md"))
+        .expect("Writing to standard output failed.");
+}

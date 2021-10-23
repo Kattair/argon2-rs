@@ -7,7 +7,7 @@ pub enum OutputMode {
 #[derive(Debug)]
 pub struct LocalConfig<'a> {
     pub argon_config: argon2::Config<'a>,
-    pub input: String,
-    pub salt: String,
+    pub input: &'a str,
+    pub salt: &'a str,
     pub output_mode: OutputMode,
 }

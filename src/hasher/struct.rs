@@ -5,11 +5,11 @@ use crate::config::{LocalConfig, OutputMode};
 use super::formatter::{format_bytes_as_hex, format_string};
 
 pub struct Hasher<'a> {
-    config: &'a LocalConfig<'a>,
+    config: LocalConfig<'a>,
 }
 
 impl Hasher<'_> {
-    pub fn new<'a>(config: &'a LocalConfig) -> Hasher<'a> {
+    pub fn new(config: LocalConfig) -> Hasher {
         Hasher { config }
     }
 

@@ -2,14 +2,14 @@
 Simple argon2 hashing program using crate rust-argon2.
 
 ## Links
-Usability mimicks usability of argon2 utility on Debian: https://manpages.debian.org/buster/argon2/argon2.1.en.html \
+Usability mimicks usability of argon2 utility on Debian: https://manpages.debian.org/buster/argon2/argon2.1.en.html  
 Default values are defined by the rust-argon2 crate here: https://docs.sru-systems.com/rust-argon2/0.8.0/argon2/struct.Config.html
 
 ## Usage
 The program reads its input from standard input.
 
-Example: echo "my input" -n | argon2-rs "randomsalt"
-**! Windows adds CR LF to the end of the echoed string !***
+Example: echo "my input" -n | argon2-rs "randomsalt"  
+**! Windows adds CR LF to the end of the echoed string !**
 
 ## Synopsis
 argon2-rs salt [OPTIONS]

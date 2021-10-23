@@ -1,7 +1,4 @@
-use super::{
-    parser::parse_args,
-    LocalConfig, OutputMode,
-};
+use super::{parser::parse_args, LocalConfig, OutputMode};
 use std::io::{self, Read};
 
 impl<'a> LocalConfig<'a> {

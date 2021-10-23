@@ -1,5 +1,5 @@
-use std::process;
 use std::io::{self, Write};
+use std::process;
 
 pub fn check_mandatory_args(args: &[String]) {
     if args.is_empty() {

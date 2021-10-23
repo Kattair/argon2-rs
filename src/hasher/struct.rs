@@ -59,11 +59,12 @@ mod tests {
             argon_config,
             input,
             salt,
-            output_mode
+            output_mode,
         };
         let hasher = Hasher::new(config);
 
-        let expected = "$argon2id$v=19$m=8192,t=3,p=1$YWJjZGVmZ2g$SOKfrty30oZCw4PaWBEAuW1ZD2D4HqkDCx2rYRI9xGE";
+        let expected =
+            "$argon2id$v=19$m=8192,t=3,p=1$YWJjZGVmZ2g$SOKfrty30oZCw4PaWBEAuW1ZD2D4HqkDCx2rYRI9xGE";
         let result = hasher.hash().unwrap();
 
         assert_eq!(expected, result);
@@ -81,5 +82,4 @@ mod tests {
 
         config
     }
-
 }

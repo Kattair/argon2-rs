@@ -6,26 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  CARGO_TERM_COLOR: always
-
 jobs:
-  format:
-    name: Code format
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - run: cargo fmt --check
-  linting:
-    name: Clippy linting
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: cargo clippy -- -D warnings
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: rui314/setup-mold@v1
-      - uses: actions/checkout@v3
-      - run: cargo test
+  CI:
+    uses: Kattair/ga-workflows/.github/workflows/rust-ci-workflow.yml@main
